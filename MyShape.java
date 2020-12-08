@@ -8,7 +8,19 @@ public abstract class MyShape
     private Color myColor; // color of this shape
 
     //------constructors-------
-
+    public MyLine()
+    {
+      this(0, 0, 0, 0, Color.BLACK); // call constructor to set values
+    }
+    public MyLine(int x1, int y1, int x2, int y2, Color myColor)
+    {
+      this.x1 = (x1 >= 0 ? x1 : 0);
+      this.y1 = (y1 >= 0 ? y1 : 0);
+      this.x2 = (x2 >= 0 ? x2 : 0);
+      this.y2 = (y2 >= 0 ? y2 : 0);
+      this.myColor = myColor; 
+    }  
+    
     //------methods---------
     //gets:
     public int getX1()
@@ -54,6 +66,6 @@ public abstract class MyShape
        this.myColor = myColor;
     } 
         //
-
+    //abstract methods:
     public abstract void draw(Graphics g); //abstract method
 }

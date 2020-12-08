@@ -1,2 +1,2 @@
-# JAVA_HW_3
+# JAVA_HW_3_Part_1
  

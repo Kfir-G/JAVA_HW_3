@@ -1,3 +1,5 @@
+import java.awt.Color;
+import java.awt.Graphics;
 public class MyLine implements MyShape
 {
     //------data fields------

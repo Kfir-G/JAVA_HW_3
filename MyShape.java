@@ -1,4 +1,6 @@
-public abstract class MyShape
+import java.awt.Color;
+import java.awt.Graphics;
+public abstract class MyShape 
 {
     //------data fields------
     private int x1; // x coordinate of first endpoint

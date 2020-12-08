@@ -1,9 +1,8 @@
-public abstract class MyShape
+public class MyLine
 {
     //------data fields------
 
     //------constructors-------
-
+    
     //------methods---------
-    public abstract void draw(Graphics g); //abstract method
 }

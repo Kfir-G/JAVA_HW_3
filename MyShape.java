@@ -1,5 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.BorderLayout;
+import javax.swing.*;
 public abstract class MyShape 
 {
     //------data fields------

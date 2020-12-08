@@ -20,7 +20,7 @@ public abstract class MyShape
       this.y2 = (y2 >= 0 ? y2 : 0);
       this.myColor = myColor; 
     }  
-    
+
     //------methods---------
     //gets:
     public int getX1()
@@ -67,5 +67,5 @@ public abstract class MyShape
     } 
         //
     //abstract methods:
-    public abstract void draw(Graphics g); //abstract method
+    public abstract void draw(Graphics g);
 }

@@ -8,21 +8,27 @@ public class TestDraw
     {
         Scanner scanner = new Scanner(System.in);
         JFrame application = new JFrame();
-        int input = -1; //default
+        String input = null; //default
+        int inputUser = -1; //default
 
         try {
-            input = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter Number of shapes:"));
-        }
-        catch (NullPointerException e1){
-            System.exit(1); //EXIT the program
+            input = (JOptionPane.showInputDialog(null, "Enter Number of shapes:"));
+            if(input == null)
+                System.exit(1); //EXIT
+            inputUser = Integer.parseInt(input);
         }
         catch(NumberFormatException e2){
-            JOptionPane.showMessageDialog(null,"Invalid number: "+input);
+            JOptionPane optionPane =new JOptionPane( String.format("Invalid number: "+input), JOptionPane.ERROR_MESSAGE);
+            JDialog dialog = optionPane.createDialog("Error");
+            dialog.setAlwaysOnTop(true);
+            dialog.setVisible(true);
             System.exit(1);
         }
-        DrawPanel panel = new DrawPanel(input);
+        DrawPanel panel = new DrawPanel(inputUser);
 
         JLabel statusLabel = new JLabel(panel.getLabelText()); // create a JLabel containing the shape information
+
+        //replace symbol in error box !!!!!
 
         application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         application.add(panel); // add drawing to CENTER by default

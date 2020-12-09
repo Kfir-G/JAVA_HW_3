@@ -10,10 +10,11 @@ public class DrawPanel extends JPanel
     2 = MyRectangle
     */
 
-    private String statusText; //String containing shpape statistic information
+    private String statusText; //String containing shape statistic information
+
+    private Random randomNumbers = new Random();
 
     //-------data fields------
-    private Random randomNumbers = new Random();
     private MyShape [] shapes; //array containing all shapes
     private int [] shapeCount; //statistic on the number of each shape
 
@@ -78,14 +79,6 @@ public class DrawPanel extends JPanel
        super.paintComponent(g);
 
         for(MyShape myShape : shapes)
-        {
-            if(myShape instanceof MyLine)
-                myShape.draw(g);                        //????????? (MyLine)
-            else if (myShape instanceof  MyOval)
                 myShape.draw(g);
-            else
-                myShape.draw(g); //MyRectangle
-
-        }
     }
 }

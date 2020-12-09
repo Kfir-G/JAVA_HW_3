@@ -79,6 +79,6 @@ public class DrawPanel extends JPanel
        super.paintComponent(g);
 
         for(MyShape myShape : shapes)
-                myShape.draw(g);
+             myShape.draw(g);
     }
 }

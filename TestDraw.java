@@ -28,8 +28,6 @@ public class TestDraw
 
         JLabel statusLabel = new JLabel(panel.getLabelText()); // create a JLabel containing the shape information
 
-        //replace symbol in error box !!!!!
-
         application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         application.add(panel); // add drawing to CENTER by default
         application.add(statusLabel, BorderLayout.SOUTH); // add the status label to the SOUTH (bottom) of the frame

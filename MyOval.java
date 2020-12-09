@@ -8,13 +8,13 @@ public class MyOval extends MyShape
     //------constructors-------
     public MyOval() //default 
     {
-        super();
-        this.filled = false;
+      super();
+      this.filled = false;
     }
     public MyOval(int x1, int y1, int x2, int y2, Color myColor, boolean filled)
     {
-        super(x1,y1,x2,y2,myColor);
-        this.filled = filled;
+      super(x1,y1,x2,y2,myColor);
+      this.filled = filled;
     }
 
     //------methods---------
@@ -49,11 +49,11 @@ public class MyOval extends MyShape
     } 
     public void draw(Graphics g)
     {
-        g.setColor(getColor());
+      g.setColor(getColor());
       
-        if (isFilled())
-            g.fillOval(getUpperLeftX(), getUpperLeftY(), getWidth(), getHeight());
-        else
-            g.drawOval(getUpperLeftX(), getUpperLeftY(),getWidth(), getHeight());
+      if (isFilled())
+        g.fillOval(getUpperLeftX(), getUpperLeftY(), getWidth(), getHeight());
+      else
+        g.drawOval(getUpperLeftX(), getUpperLeftY(),getWidth(), getHeight());
     }
 }

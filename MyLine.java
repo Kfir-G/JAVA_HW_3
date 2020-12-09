@@ -7,11 +7,10 @@ public class MyLine extends MyShape
     //------constructors-------
     public MyLine()
     {
-        super();
+        super(); 
     }
     public MyLine(int x1, int y1, int x2, int y2, Color myColor)
     {
-
         super(x1,y1,x2,y2,myColor);
     }
 

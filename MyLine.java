@@ -1,13 +1,13 @@
 import java.awt.Color;
 import java.awt.Graphics;
-public class MyLine implements MyShape
+public class MyLine extends MyShape
 {
     //------data fields------
 
     //------constructors-------
     public MyLine()
     {
-        super();
+        super(); 
     }
     public MyLine(int x1, int y1, int x2, int y2, Color myColor)
     {

@@ -1,6 +1,6 @@
 import java.awt.Color;
 import java.awt.Graphics;
-public class MyRectangle
+public class MyRectangle extends MyShape
 {
     //------data fields------
     private boolean filled; // whether this shape is filled
@@ -8,13 +8,13 @@ public class MyRectangle
     //------constructors-------
     public MyRectangle() //default 
     {
-        this.filled = false;
-        super();
+      super();
+      this.filled = false;
     }
     public MyRectangle(int x1, int y1, int x2, int y2, Color myColor, boolean filled)
     {
-        this.filled = filled;
-        super(x1,y1,x2,y2,myColor);
+      super(x1,y1,x2,y2,myColor);
+      this.filled = filled;
     }
 
     //------methods---------
@@ -27,9 +27,9 @@ public class MyRectangle
     //gets:
     public boolean isFilled()
     {
-       return filled;
+      return filled;
     } 
-        //
+      //
     
     public int getUpperLeftX() // get upper left x coordinate
     {

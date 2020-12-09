@@ -23,7 +23,7 @@ public class MyRectangle extends MyShape
     {
       this.filled = filled;
     }
-        //
+      //
     //gets:
     public boolean isFilled()
     {
@@ -52,8 +52,8 @@ public class MyRectangle extends MyShape
       g.setColor(getColor());
       
       if (isFilled())
-         g.fillRect(getUpperLeftX(), getUpperLeftY(),getWidth(), getHeight());
+        g.fillRect(getUpperLeftX(), getUpperLeftY(),getWidth(), getHeight());
       else
-         g.drawRect(getUpperLeftX(), getUpperLeftY(), getWidth(), getHeight());
+        g.drawRect(getUpperLeftX(), getUpperLeftY(), getWidth(), getHeight());
    } 
 }

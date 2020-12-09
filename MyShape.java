@@ -29,7 +29,7 @@ public abstract class MyShape
     //gets:
     public int getX1()
     {
-       return x1;
+      return x1;
     } 
     public int getX2()
     {
@@ -67,9 +67,9 @@ public abstract class MyShape
     } 
     public void setColor(Color myColor)
     {
-       this.myColor = myColor;
+      this.myColor = myColor;
     } 
-        //
+      //
     //abstract methods:
     public abstract void draw(Graphics g);
 }

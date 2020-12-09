@@ -23,13 +23,13 @@ public class MyOval extends MyShape
     {
       this.filled = filled;
     }
-        //
+      //
     //gets:
     public boolean isFilled()
     {
-       return filled;
+      return filled;
     } 
-        //
+      //
 
     public int getUpperLeftX() // get upper left x coordinate
     {

@@ -6,7 +6,7 @@ public class TestDraw
 {
     public static void main(String[] args)
     {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); 
         JFrame application = new JFrame();
         String input = null; //default
         int inputUser = -1; //default

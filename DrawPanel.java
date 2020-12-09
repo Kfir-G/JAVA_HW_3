@@ -28,11 +28,12 @@ public class DrawPanel extends JPanel
     public void initShapes(int numberShapes)
     {
         shapes = new MyShape[numberShapes]; //create the array of shape by user's input
+        shapeCount = new int[3];
         
         for(int i=0; i<numberShapes; i++)
         {
             //generate values for the shape:
-            int randomShape =  randomNumbers.nextInt(2);  // generate shape type
+            int randomShape =  randomNumbers.nextInt(3);  // generate shape type
             Color randomColor =  new Color(randomNumbers.nextInt(256));  // generate a random color
             boolean randomFilled = randomNumbers.nextBoolean(); //generate if the shape is filled
             int x1 = randomNumbers.nextInt(450); // generate random coordinates-
@@ -42,8 +43,9 @@ public class DrawPanel extends JPanel
 
             shapes[i] = createShape(randomShape, randomColor,randomFilled, x1,y1,x2,y2); //x1,x2,y1,y2 -> coordinates
             shapeCount[randomShape]++;
-
         }
+
+        statusText = String.format("%s: %d, %s: %d, %s: %d", "Lines", shapeCount[0], "Ovals", shapeCount[1],"Rectangles", shapeCount[2]);
     }
     private MyShape createShape(int shapeType, Color color, boolean filled, int... coordinates)
     {
@@ -55,19 +57,15 @@ public class DrawPanel extends JPanel
         switch (shapeType) {
             case 0: //MyLine
                 return (new MyLine(x1, y1, x2, y2, color));
-                //break;
 
             case 1: //MyOval
                 return (new MyOval(x1, y1, x2, y2, color,filled));
-                //break;
 
             case 2: //MyRectangle
                 return (new MyRectangle(x1, y1, x2, y2, color,filled));
-                //break;
 
             default:
                 return null;
-                //break;
         }
     }
 
@@ -78,27 +76,16 @@ public class DrawPanel extends JPanel
     public void paintComponent(Graphics g)
     {
        super.paintComponent(g);
-       
-       statusText = String.format("%s: %d, %s: %d, %s: %d", "Lines", shapeCount[0], "Ovals", shapeCount[1],"Rectangles", shapeCount[2]);        
 
         for(MyShape myShape : shapes)
         {
-            //if(myShape is  MyLine)
-        }
+            if(myShape instanceof MyLine)
+                myShape.draw(g);                        //????????? (MyLine)
+            else if (myShape instanceof  MyOval)
+                myShape.draw(g);
+            else
+                myShape.draw(g); //MyRectangle
 
-       /* 
-       // draw the lines
-       for (MyLine line : lines)
-          line.draw(g);
- 
-       // draw the ovals
-       for (MyOval oval: ovals)
-          oval.draw(g);
- 
-       // draw the rectangles
-       for (MyRectangle rectangle : rectangles)
-          rectangle.draw(g); 
-        */
-    } 
-    //static void coordinates() --??
+        }
+    }
 }

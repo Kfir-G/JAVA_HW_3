@@ -1,6 +1,6 @@
 import java.awt.Color;
 import java.awt.Graphics;
-public class MyLine implements MyShape
+public class MyLine extends MyShape
 {
     //------data fields------
 
@@ -11,6 +11,7 @@ public class MyLine implements MyShape
     }
     public MyLine(int x1, int y1, int x2, int y2, Color myColor)
     {
+
         super(x1,y1,x2,y2,myColor);
     }
 

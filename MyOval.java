@@ -31,7 +31,7 @@ public class MyOval extends MyShape
     //------methods---------
     //sets:
     /**
-     * set method of if the shape is filled with color
+     * set method of if the oval is filled with color
      * @param filled boolean value if the shape is filled with color
      */
     public void setFilled(boolean filled)
@@ -41,7 +41,7 @@ public class MyOval extends MyShape
       //
     //gets:
     /**
-     * get method of if the shape is filled with color
+     * get method of if the oval is filled with color
      * @return boolean value if the shape is filled with color
      */
     public boolean isFilled()

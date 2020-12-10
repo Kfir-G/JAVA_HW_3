@@ -4,6 +4,9 @@ import javax.swing.*;
 
 public class TestDraw
 {
+    /**
+	 * static main method which handle user's input and handle the draw pannel
+	 */
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in); 

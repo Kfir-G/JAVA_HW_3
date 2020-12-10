@@ -1,5 +1,9 @@
 import java.awt.Color;
 import java.awt.Graphics;
+/**
+ * This Class implements the state and behaviour of Line infrastructure.
+ * It inherits from MyShape class.
+ */
 public class MyLine extends MyShape
 {
     //------constructors-------

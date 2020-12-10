@@ -1,5 +1,9 @@
 import java.awt.Color;
 import java.awt.Graphics;
+/**
+ * This Class implements the state and behaviour of Rectangle infrastructure.
+ * It inherits from MyShape class.
+ */
 public class MyRectangle extends MyShape
 {
     //------data fields------

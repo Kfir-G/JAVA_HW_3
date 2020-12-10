@@ -2,6 +2,10 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.util.Random;
 import javax.swing.JPanel;
+/**
+ * This Class implements the state and behaviour of DrawPanel infrastructure.
+ * It inherits from JPanel class.
+ */
 public class DrawPanel extends JPanel
 {
     /* shapes values:

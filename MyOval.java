@@ -1,5 +1,9 @@
 import java.awt.Color;
 import java.awt.Graphics;
+/**
+ * This Class implements the state and behaviour of Oval infrastructure.
+ * It inherits from MyShape class.
+ */
 public class MyOval extends MyShape
 {
     //------data fields------

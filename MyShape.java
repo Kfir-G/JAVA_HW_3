@@ -2,6 +2,9 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.BorderLayout;
 import javax.swing.*;
+/**
+ * This abstract Class implements the state and behaviour of Shape infrastructure.
+ */
 public abstract class MyShape 
 {
     //------data fields------

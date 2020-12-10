@@ -1,7 +1,10 @@
 import java.awt.BorderLayout;
 import java.util.*;
 import javax.swing.*;
-
+/**
+ * This class implements the state and behaviour of the TestDraw.
+ *  This class include a Main.
+ */
 public class TestDraw
 {
     /**

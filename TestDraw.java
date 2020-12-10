@@ -41,4 +41,3 @@ public class TestDraw
         application.setVisible(true);
     }
 }
-
